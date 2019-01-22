@@ -1,0 +1,62 @@
+*
+{
+  font-family: century;
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body
+{
+  background-image: url("background.jpg");
+  margin: 20px;
+  color: white;
+}
+header
+{
+  font-style: bold;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #283593;
+}
+
+nav
+{
+  font-style: bold;
+  font-size: 20px;
+  padding: 30px;
+  background-color: #303F9F;
+}
+section
+{
+  background-color: #9CCC65  ;
+  font-family: arial;
+}
+article
+{
+  padding: 10px;
+  display: block;
+}
+footer
+{
+  font-style: bold;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #D81B60  ;
+}
+
+table
+{
+
+  box-sizing: content-box;
+  font-family: arial;
+}
+th, td
+{
+  padding: 15px;
+ text-align: left;
+}
+p
+{
+  font-size: 10px;
+}
