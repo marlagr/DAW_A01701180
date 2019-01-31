@@ -2,15 +2,59 @@
   <head>
     <meta charset="utf-8">
     <title> lab 4</title>
-  </head>
-  <body>
-    <button onclick="sumaNumerosRand()">Try it</button>
-    <p id="x"></p>
-    <p>+</p>
-    <p id="y"></p>
-    <p>Resultado &nbsp; <input type="number"name="tel" size = "30" id="resultado"> </p>
+      <link rel="stylesheet" href="style.css">
 
-    <button onclick="validateOperation()">Enviar respuesta</button>
+    </style>
+  </head>
+  <body align=center>
+    <h2>PRUEBA 1</h2>
+      <button onclick="cubeNumber()">Try it</button>
+      <p id="demo"></p>
+    <h2>PRUEBA 2 </h2>
+      <button onclick="sumaNumerosRand()">Try it</button>
+      <p id="x"></p>
+      <p>+</p>
+      <p id="y"></p>
+    <h2>PRUEBA 3 </h2>
+      <button onclick="contador()">Try it</button>
+      <p id="contador"></p>
+    <h2>PRUEBA 4 </h2>
+      <button onclick="promedios()">Try it</button>
+      <p id="promedio"></p>
+    <h2>PRUEBA 5 </h2>
+    <button onclick="volteado()">Try it</button>
+    <p id="volteado"></p>
+    <h2>PRUEBA 6 </h2>
+      <button onclick="regresion()">Try it</button>
+      <p id="regresion"></p>
+
+      <p>PREGUNTAS Y RESPUESTAS </p>
+
+        <table align=center>
+        <tr>
+          <td>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</td>
+          <td>Diferentes sintaxis y como compilar</td>
+        </tr>
+        <tr>
+          <td>¿Menciona 5 metodos de Date</td>
+          <td>getMilliseconds(), getTime(), getDay(), Date.now(), getSeconds</td>
+        </tr>
+        <tr>
+          <td>¿Qué métodos tienen los arreglos? </td>
+          <td>array.lenght(), array.indexOf(), array.lowerCase(), array.upperCase(), array.subString(pos1, pos2)  </td>
+        </tr>
+        <tr>
+          <td>¿Cómo se declara una variable con alcance local dentro de una función? </td>
+          <td>var pi = 3.14159 //dentro de la función  </td>
+        </tr>
+        <tr>
+          <td>¿Cómo se declara una variable con alcance global dentro de funciones? </td>
+          <td>var pi = 3.14159 //fuera de la funcion y se manda llamar por su nombre pi  </td>
+        </tr>
+
+      </table>
+
+
 
       <script type="text/javascript" src="script.js"></script>
   </body>
