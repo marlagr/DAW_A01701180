@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>LAB 5 </title>
+  </head>
+  <body>
+    <header>
+      PROFUNDIZANDO EN JAVASCRIPT
+    </header>
+    <nav>
+      <a href="#">PREGUNTAS</a>
+      <a href="#">FUNCIONES</a>
+    </nav>
+    <section>
+      Aqui voy a poner las preguntas y la actividad
+      <article class="preguntas " id="preguntas">
+        <table>
+          <tr>
+            <th>Pregunta</th>
+            <th>Respuesta</th>
+          </tr>
+          <tr>
+            <td>¿Por que es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+              </td>
+            <td>Principalmente para evitar errores humanos y mantener un formato de la información( por si exista más de una manera de introducir la información)
+              </td>
+          </tr>
+          <tr>
+            <td>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</td>
+            <td>Mediante un POST, y saltando el onsubmit</td>
+          </tr>
+          <tr>
+            <td>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+            </td>
+            <td>Para verificar y corroborar que los datos sean correctos</td>
+          </tr>
+        </table>
+      </article>
+      <article class="javascript" id="funciones">
+        Validando contrasena <br>
+        contrasena: <input type="password" id="pass" > <br>
+        Introduce de nuevo tu contrasena:  <input type="password" id="pass2"><br>
+        <button type="button" name="button" onclick="validar()" > listo!</button>
+      </article>
+    </section>
+
+
+
+<script type="text/javascript" src="function.js"></script>
+
+
+
+  </body>
+</html>
