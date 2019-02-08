@@ -1,0 +1,93 @@
+#header-section{
+  background-color:#000099;
+  color: black;
+  height:500px;
+
+}
+
+#main-navbar{
+  justify-content: initial;
+}
+#section1 {
+  padding-top:100px;
+  height:500px;
+  color: #fff;
+  background-color: #1E88E5;
+}
+#section2 {
+  padding-top:100px;
+  height:500px;
+  color: #fff;
+  background-color: #673ab7;
+}
+#section3 {
+  padding-top:100px;
+  height:500px;
+  color: #fff;
+  background-color: #ff9800;
+}
+#section41 {
+  padding-top:100px;
+  height:500px;
+  color: #fff;
+  background-color: #00bcd4;
+}
+#section42 {padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #009688;
+}
+#section43 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #ff6699;
+}
+#component {
+  font-size: 20px;
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #000099;
+}
+a:hover {
+  cursor:pointer;
+}
+img
+{
+  display: flex;
+  clear: both;
+  width: 33.3%;
+  height: 50%;
+  margin-left: 10px;
+  padding: 20px;
+}
+p
+{
+  padding: 20px;
+  text-align: justify;
+  width: : 50%;
+  display: flex;
+  font-size: 15px;
+  clear: both;
+  text-overflow: clip;
+}
+
+button {
+    padding: 15px 32px;
+    display:flex;
+    float: right;
+    font-size: 16px;
+    font-family: arial;
+}
+article
+{
+  padding: 10px;
+  margin: 15px;
+}
+
+h1
+{
+  display: flex;
+  float: left;
+}
