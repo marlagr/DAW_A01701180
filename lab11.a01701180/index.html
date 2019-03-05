@@ -1,0 +1,47 @@
+
+  <body>
+    <section id="forma">
+      <div class="row">
+      <form class="col s12" action="functions.php" method="POST">
+        <div class="row">
+          <div class="input-field col s6">
+            <input  id="first_name" type="text" class="validate" name="first_name">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="last_name">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit">Submit
+        </button>
+      </form>
+    </div>
+    </section>
+    <article class="preguntas" id="preguntas" name="preguntas">
+      <h4>Preguntas</h4>
+      <table>
+        <tr>
+          <td>¿Por qué es una buena práctica separar el controlador de la vista?</td>
+          <td>Para no cargar de muchas tareas al servidor, y que así no tarde en responder demasiado la paginas</td>
+        </tr>
+        <tr>
+          <td>¿Qué es XSS y cómo se puede prevenir?</td>
+          <td>Son ciertos valores que entran como input que pueden corromper nuestra info del sistema</td>
+        </tr>
+      </table>
+    </article>
