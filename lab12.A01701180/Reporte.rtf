@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue255;
+\red255\green255\blue254;\red25\green25\blue25;\red255\green255\blue254;\red25\green25\blue25;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0\c87059;\cssrgb\c0\c0\c100000;
+\cssrgb\c100000\c100000\c99608;\cssrgb\c12941\c12941\c12941;\cssrgb\c100000\c100000\c99608;\cssrgb\c12941\c12941\c12941;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22060\viewh8840\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs30 \cf0 \cb2 \expnd0\expndtw0\kerning0
+EJERCICIO 2
+\b0 \
+\'bfCu\'e1l es? \'bfA qu\'e9 se debe? \
+
+\fs24 El \'faltimo en el lugar 45, por que se a\'f1adi\'f3 al \'faltimo
+\fs30 \
+\
+\'bfQu\'e9 ocurri\'f3? \cb1 \
+\cb2 Verifica si la tabla de materiales tiene definido alg\'fan constraint (restricci\'f3n): \cb1 \
+\cb2 \'a0\'a0sp_helpconstraint materiales \
+\
+
+\fs24 La tabla tiene en CONSTRAINT_TYPE: Primary Key y CONSTRAINT_NAME: llaveMateriales
+\fs30 \
+\
+\'bfQu\'e9 informaci\'f3n muestra esta consulta? \cb1 \
+
+\fs24 \cb2 Aseg\'farate de crear constraints an\'e1logos para definir las llaves primarias de las tablas proveedores, y proyectos. 
+\fs30 \
+\
+\'bfQu\'e9 sentencias utilizaste para definir las llaves primarias? \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs24 \cf4 \cb5 \outl0\strokewidth0 \strokec4 ALTER\cf6 \strokec6  \cf4 \strokec4 TABLE\cf6 \strokec6  NomTabla add \cf4 \strokec4 constraint\cf6 \strokec6  NomLlave \cf4 \strokec4 PRIMARY\cf6 \strokec6  \cf4 \strokec4 KEY\cf6 \strokec6  (NColumnaLlave)\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf0 \cb2 \outl0\strokewidth0 \'bfQu\'e9 sentencias utilizaste para definir este constrait? en Entregan\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs24 \cf4 \cb7 ALTER\cf8  \cf4 TABLE\cf8  Entregan add \cf4 constraint\cf8  llaveEntregan \cf4 PRIMARY\cf8  \cf4 KEY\cf8  CLUSTERED (Clave,Numero, RFC,fecha)\
+\
+
+\f2\b EJERCICIO 3
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf0 \cb2 \'bfQu\'e9 particularidad observas en los valores para clave, rfc y numero? \cb1 \uc0\u8232 \cb2 \'bfC\'f3mo responde el sistema a la inserci\'f3n de este registro? \
+\
+
+\fs24 Se crearon los archivos con las llaves primarias en clave, rfc y numero.
+\fs30 \
+\
+\'bfQu\'e9 significa el mensaje que emite el sistema? \cb1 \
+\cb2 \'bfQu\'e9 significado tiene la sentencia anterior? \
+\
+
+\fs24 Que no se puede a\'f1adir por que falta la llave for\'e1nea.
+\fs30 \
+\
+\'a0sp_helpconstraint tableName \cb1 \
+\cb2 \'bfQu\'e9 significan las columnas de esas consultas?\
+
+\fs24 Muestra las llaves que existen para la tabla Entregan, que solo es la for\'e1nea y la primaria que es compuesta.
+\fs30 \
+\
+
+\b EJERCICIO 4
+\b0 \
+\
+\'bfQu\'e9 uso se le est\'e1 dando a GETDATE()? \
+
+\fs24 La fecha de hoy
+\fs30 \cb1 \
+\cb2 \'bfTiene sentido el valor del campo de cantidad? \
+
+\fs24 Pues no, por que seria un material de cual no hay cantidad.
+\fs30 \
+\
+\'bfC\'f3mo responde el sistema? \cb1 \
+\cb2 \'bfQu\'e9 significa el mensaje? \
+Lanza mensaje al querer introducir una cantidad igual a cero. \
+Te dice que desacuerdo al check no se puede agregar el dato, que hay un conflicto Cantidad\
+\
+
+\b INTEGRIDAD REFERENCIAL\
+\
+
+\b0 La integridad referencial evita cometer errores a los usuarios al momento de ingresar los datos. Tanto que un dato sea coherente con el tipo de dato al que\
+pertenece, como que la informaci\'f3n sea l\'f3gica. Un ejemplo de esto lo vemos en el ejercicio anterior, donde ingresar un material que se uso 0 veces en calidad\
+no tiene l\'f3gica por lo tanto fue necesario aplicar una restricci\'f3n para ingresar los datos.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs31 \cf0 \cb2 Silberschatz, A. Korth, H. (S.F.). Fundamentos de Bases de Datos. McGraw-Hill Inc
+\fs30 \cb2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf6 \cb1 \outl0\strokewidth0 \strokec6 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf6 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf6 \
+}
