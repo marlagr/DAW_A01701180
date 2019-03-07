@@ -1,0 +1,30 @@
+*
+{
+  background-color:
+}
+
+section
+{
+  padding: 5%;
+  margin-top: 10%;
+  margin-left:20%;
+  margin-right: 20%;
+  background-color: #F0F0FA;
+  box-shadow: 1px 1px 0 0 #E6DFE6;
+}
+nav {
+  background-color: #7A447A !important;
+  padding: 5px;
+}
+
+h4
+{
+  align-content: center;
+  align-items: center;
+  align-self:stretch;
+}
+
+button
+{
+  position: fixed;
+}
