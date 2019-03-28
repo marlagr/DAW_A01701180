@@ -24,6 +24,7 @@
       // Options: MYSQLI_NUM to use only numeric indexes
       // MYSQLI_ASSOC to use only name (string) indexes
       // MYSQLI_BOTH, to use both
-      close($bd);
+       close($bd);
+
   }
  ?>
