@@ -1,0 +1,16 @@
+table, td, tr
+{
+    padding: 10px;
+    text-align: center;
+    
+}
+.cabecera
+{
+    float: left;
+    width: 91%;
+    
+}
+.container{
+ margin-top:10px;
+ margin-bottom :10px;
+}
