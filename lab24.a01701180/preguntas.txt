@@ -1,0 +1,27 @@
+- ¿Que pasa cuando deseas realizar esta consulta desde la segunda conexion?
+
+No aparecen los datos insertados en la primera conexion.
+
+- ¿Qué pasa cuando deseas realizar esta consulta desde la primera conexion?
+Marca error por tiempo excedido en periodo
+
+- Explica por qué ocurre dicho evento al ejecutar
+SELECT * FROM ClientesBanca where NoCuenta='001'
+
+Lanza una consulta vacia, porque no se sincroniza la informacion de una tabla con otra,
+por que la conexion esta separada.
+
+- ¿Qué ocurrió y por qué?
+Al ejecutar ROLLBACK TRANSACTION PRUEBA2
+No se ejecuto
+
+- Posteriormente revisa si las tablas de clientes_banca y movimientos sufrieron algún cambio,
+es decir, si dio de alta el registro que se describe en la transacción y su actualización.
+
+Si, se le quito a la cuenta el monto
+
+- ¿Para qué sirve el comando @@ERROR revisa la ayuda en línea?
+  ¿Qué hace la transacción?
+  ¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué.
+Sirve para determinar si hubo un error en la transaccion, la transaccion inserta valores duplicados,
+por lo tanto no se pudo hacer la insercion a la tabla. 
