@@ -1,0 +1,52 @@
+  <div class="container">
+      <h4> Registrar Nuevo material</h4>
+        <form   method="POST" id="container" name="container" action="php/material.php"  >
+          <div class="form-group col-md-6">
+              <label for="nombre">Nombre del material</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group col-md-6">
+              <label >Clave</label>
+              <input type="number"  class="form-control" id="clave" name="clave" required>
+          </div>
+          <div class="form-group col-md-6">
+              <label >Costo</label>
+              <input type="number"  class="form-control" id="costo" name="costo" required>
+          </div>
+          <div class="form-group col-md-6">
+              <label >Impuesto</label>
+              <input type="number" class="form-control" id="impuesto" name="impuesto" required>
+          </div>
+          <div class="bt-enviar container">
+            <button type="submit" name="crear" id="crear" class="btn btn-primary " >Crear</button>
+          </div>
+        </form>
+        <h4> Registrar Nuevo Proveedor</h4>
+        <form   method="POST" id="container" name="container" action="php/proveedor.php" >
+          <div class="form-group col-md-6">
+              <label for="nombre">RFC</label>
+              <input type="text" class="form-control" id="rfc" name="rfc" required>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="nombre">Razón Social</label>
+              <input type="text" class="form-control" id="social" name="social" required>
+          </div>
+                    <div class="bt-enviar container">
+            <button type="submit" name="crear" id="crear" class="btn btn-primary " >Crear</button>
+          </div>
+        </form>
+          <h4> Registrar Nuevo Proyecto</h4>
+        <form   method="POST" id="container" name="container" action="php/proyecto.php">
+          <div class="form-group col-md-6">
+              <label for="nombre">Numero</label>
+              <input type="number" class="form-control" id="numero" name="numero" required>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="nombre">Denominación</label>
+              <input type="text" class="form-control" id="deno" name="deno" required>
+          </div>
+          <div class="bt-enviar container">
+            <button type="submit" name="crear" id="crear" class="btn btn-primary " >Crear</button>
+          </div>
+        </form>
+  </div >

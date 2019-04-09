@@ -1,0 +1,15 @@
+¿Qué hace el primer bloque del código (bloque del IF)? 
+Revisa si existe el procedimiento guardado en cierta librería y si existe lo borra
+
+	¿Para qué sirve la instrucción GO? 
+Para que se ejecute primero las instrucciones que están antes.
+
+	¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+Recibe los cuatro parámetros de la tabla que son clave, descripción, costo e impuesto de la 
+tabla Materiales.
+
+	Explica en tu reporte qué recibe como parámetro este procedimiento y qué 
+hace.
+Esta recibiendo como parámetro una serie de caracteres en donde solo se busca la palabra 
+clave ‘lad’ y el costo mayor a 20
+
