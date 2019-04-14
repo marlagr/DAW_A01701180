@@ -83,7 +83,7 @@
             // use of numeric index
             echo'<td scope="row">'.$row['Nombre'].'</td>';
             echo  '<td scope="row">'.$row['Apellidos'].'</td>';
-            echo'<td scope="row">'.$row['Total'].'</td>';
+            echo'<td scope="row">$'.$row['Total'].'</td>';
             echo'<td scope="row">'.$row['Fecha'].'</td>';
         	echo '</tr>';
         }

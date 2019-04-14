@@ -20,22 +20,13 @@
             })
         });
 
-
-
-
-
-    /*$("#enviar").click(function(){ 
-            $.ajax({
-                type: 'POST',
-                url: 'util/transaccionNombre.php',
-                data:{'data': 'data'}
-            })
-            .done(function(data){
-                $('#tran').html(data)
-            })
-            .fail(function(){
-                console.log('error data');
-            })
-    });*/
+     $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+      });
+    });
     
  
