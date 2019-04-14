@@ -72,25 +72,25 @@
    
    function obtenerTransaccion($nombre)
    {
-        $result = "";
+        $print = "";
         $bd = connect();
         $query="CALL transaccionNombre('".$nombre."')";
         $results = $bd->query($query);
-        $print .='<table class="table table-striped"><thead ><tr><th scope="col">Nombre</th><th scope="col">Apellido</th><th scope="col">Monto</th><th scope="col">Fecha</th></tr></thead><tbody>';
+        echo'<table class="table table-striped"><thead ><tr><th scope="col">Nombre</th><th scope="col">Apellido</th><th scope="col">Monto</th><th scope="col">Fecha</th></tr></thead><tbody>';
         while ($row = mysqli_fetch_array($results, MYSQLI_BOTH)) 
         {             
             echo  '<tr>';
             // use of numeric index
-            $print.='<td scope="row">'.$row['Nombre'].'</td>';
-            $print.=  '<td scope="row">'.$row['Apellidos'].'</td>';
-            $print.='<td scope="row">'.$row['Total'].'</td>';
-            $print  .='<td scope="row">'.$row['Fecha'].'</td>';
-        	$print .= '</tr>';
+            echo'<td scope="row">'.$row['Nombre'].'</td>';
+            echo  '<td scope="row">'.$row['Apellidos'].'</td>';
+            echo'<td scope="row">'.$row['Total'].'</td>';
+            echo'<td scope="row">'.$row['Fecha'].'</td>';
+        	echo '</tr>';
         }
-         $print .=  '</tr></tbody></table><hr>';
+         echo  '</tr></tbody></table><hr>';
         close($bd);
         
-      return $print;
+      //return $print;
    }
 
 
